@@ -52,7 +52,7 @@ The application provides the following API endpoints:
 
 The application is deployed on Heroku.
 
-[View deployment](https://telecom-interview-node.herokuapp.com/)
+[View docs](https://telecom-interview-node.herokuapp.com/docs)
 
 ## Credits
 
