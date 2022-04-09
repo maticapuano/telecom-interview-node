@@ -1,0 +1,16 @@
+{
+    "name": "telecom-interview-node",
+    "version": "0.0.1",
+    "main": "index.js",
+    "repository": "git@github.com:maticapuano/telecom-interview-node.git",
+    "author": "Matias Capuano <maticapuano97@gmail.com>",
+    "license": "MIT",
+    "scripts": {},
+    "dependencies": {},
+    "devDependencies": {
+        "eslint": "^8.13.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-import": "^2.26.0",
+        "prettier": "^2.6.2"
+    }
+}
