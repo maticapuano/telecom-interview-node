@@ -24,7 +24,7 @@ The application has been developed using Node.js and the following libraries:
 ## Features
 
 -   Get the current weather forecast and the next 5 days forecast for the current city.
--   Get the current weather forecast and the next 5 days.
+-   Get the current weather using the user's IP or city provided.
 -   The current city is detected using the user's IP address.
 
 ## Architecture
