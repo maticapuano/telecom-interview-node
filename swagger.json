@@ -1,0 +1,75 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "description": "Is a simple weather forecast application that provides the current weather forecast and the next 5 days forecast for the current city.",
+        "version": "0.0.1",
+        "title": "Telecom Interview (Weather forecast)",
+        "contact": { "email": "maticapuano97@ggmail.com" },
+        "license": {
+            "name": "MIT",
+            "url": "https://github.com/maticapuano/telecom-interview-node/blob/master/LICENSE"
+        }
+    },
+    "tags": [
+        {
+            "name": "location",
+            "description": "Returns the current city, longitude, latitude from current IP"
+        },
+        {
+            "name": "current",
+            "description": "Returns the current weather forecast for the current city"
+        },
+        {
+            "name": "forecast",
+            "description": "Returns the next 5 days weather forecast for the current city"
+        }
+    ],
+    "paths": {
+        "/location": {
+            "get": {
+                "tags": ["location"],
+                "summary": "Return current location from IP",
+                "description": "",
+                "responses": { "200": { "description": "Success Operation" } }
+            }
+        },
+        "/current": {
+            "get": {
+                "tags": ["current"],
+                "summary": "Return current weather",
+                "description": "If a city is not provided, it will use the current location from IP",
+                "parameters": [
+                    {
+                        "name": "city",
+                        "in": "query",
+                        "description": "The city to search",
+                        "required": false,
+                        "schema": { "type": "string" }
+                    }
+                ],
+                "responses": { "200": { "description": "Success Operation" } }
+            }
+        },
+        "/forecast": {
+            "get": {
+                "tags": ["forecast"],
+                "summary": "Return next 5 days forecast",
+                "description": "If a city is not provided, it will use the current location",
+                "parameters": [
+                    {
+                        "name": "city",
+                        "in": "query",
+                        "description": "The city to search",
+                        "required": false,
+                        "schema": { "type": "string" }
+                    }
+                ],
+                "responses": { "200": { "description": "Success Operation" } }
+            }
+        }
+    },
+    "servers": [
+        { "url": "https://telecom-interview-node.herokuapp.com/v1" },
+        { "url": "http://localhost:3000/v1" }
+    ]
+}
