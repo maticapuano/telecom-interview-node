@@ -38,7 +38,12 @@ The Modules Arquitecture pattern is a variation of the Model View Controller (MV
 1. Clone the project from Github.
 2. Install the dependencies using `npm install`.
 3. Copy `.env.sample` to `.env` and add your OpenWeatherMap API key.
-4. Run the application using `npm start:dev` or `npm start.
+4. Run the application using `npm start:dev` or `npm start`.
+
+## Testing
+Used framework [Jest](https://jestjs.io/en/) to test the application and wrote some basic unit tests.
+
+To run the tests use `npm test`.
 
 ## API Documentation
 
